@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WeatherApp"
+             x:Class="WeatherApp.Views.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="{Binding Clicked}" FontSize="36" HorizontalTextAlignment="Center"/>
+        <Label Grid.Row="1" Text="{Binding WeatherInCity}" FontSize="36" HorizontalTextAlignment="Center"/>
+
+        <Button Grid.Row="2" Text="Нажми меня" Command ="{Binding button_clicked}"/>
+
+    </Grid>
+
+</ContentPage>
