@@ -12,7 +12,7 @@ namespace WeatherApp.Models
     {
         public string JSONCityCurrTemp(string cityName)
         {
-            string apikey = "765db636a77fb4029456663af384cdb8";
+            string apikey = "your-api-key";
             string apiurl = "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&units=metric&appid=" + apikey;
 
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(apiurl);
